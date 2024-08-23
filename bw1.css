@@ -108,15 +108,12 @@ body {
 }
 
 .header {
-  display: flex;
-  height: 40vh;
-  width: 100%;
+  height: 28vh;
 }
 .logo_q {
-  margin-top: 20vh;
-  margin-left: 20vh;
-  width: 13%;
-  height: 17%;
+  margin-top: 10vh;
+  margin-left: 10vh;
+  height: 50px;
 }
 
 .question {
@@ -184,8 +181,8 @@ body {
   height: 100%;
   border-radius: 50%;
   background: conic-gradient(
-    rgba(2, 245, 229, 0.932) 0%,
-    rgba(2, 245, 229, 0.932) var(--progress),
+    rgba(12, 17, 59, 0.932) 0%,
+    rgba(12, 17, 59, 0.932) var(--progress),
     transparent var(--progress),
     transparent 100%
   );
@@ -210,9 +207,27 @@ h1 {
   text-align: center;
 }
 
-p {
+#first,
+#second,
+#third,
+#fourth {
+  text-align: center;
+}
+
+#question_page {
   color: white;
 }
-.final-score h2 {
+
+/* css punteggio finale*/
+
+h2 {
   color: white;
+  text-align: center;
+}
+
+.final-score {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

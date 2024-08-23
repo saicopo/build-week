@@ -7,228 +7,33 @@
     <title>question_page</title>
     <link rel="stylesheet" href="./bw1.css">
 </head>
-
 <body>
     <div class="core">
         <div class="header">
             <img class="logo_q" src="./img/epicode_logo.png" alt="">
         </div>
         <div class="question">
-            <h1 class="domanda"> What does CPU stand for?</h1>
+            <h1 class="domanda"></h1>
         </div>
         <div class="container_answer">
-            <input type="submit" class="answer_input" id="1" onclick="check()" value="Central Process Unit"></input>
-            <input type="submit" class="answer_input" id="2" onclick="check()" value="Central Processing Unit"></input>
-            <input type="submit" class="answer_input" id="3" onclick="check()" value="Computer Personal Unit"></input>
-            <input type="submit" class="answer_input" id="4" onclick="check()" value="Central Processor Unit"></input>
+            <input class="answer_input" id="first" onclick="popolateQuestion()"></input>
+            <input class="answer_input" id="second" onclick="popolateQuestion()"></input>
+            <input class="answer_input" id="third" onclick="popolateQuestion()"></input>
+            <input class="answer_input" id="fourth" onclick="popolateQuestion()"></input>
         </div>
         <div class="question_number">
-            <h2> QUESTION 1<span>/10</span></h2>
+            <h2> QUESTION <span id="question_page">1</span><span>/10</span></h2>
         </div>
         <!-- Timer Circolare -->
         <div class="timer">
             <div class="circle">
                 <div class="inside-circle">
-                    <span id="timer"> SECONDS <br> 60 <br> REMAINING </span>
+                    <span id="timer"></span>
                 </div>
             </div>
         </div>
     </div>
-
-<div class="question">
-    <h1 class="domanda"> In the programming language Java, which of these keywords would you put on a variable to make
-        sure it doesn&#039;t get modified?
-    </h1>
-    </div>
-    <div class="container_answer">
-        <input type="submit" class="answer_input" id="1" onclick="check()" value="Public"></input>
-        <input type="submit" class="answer_input" id="2" onclick="check()" value="Private"></input>
-        <input type="submit" class="answer_input" id="3" onclick="check()" value="Final"></input>
-        <input type="submit" class="answer_input" id="4" onclick="check()" value="Static"></input>
-    </div>
-    <div class="question_number">
-        <h2> QUESTION 2<span>/10</span></h2>
-    </div>
 </div>
-
-<div class="question">
-    <h1 class="domanda"> The logo for Snapchat is a Bell.
-    </h1>
-    </div>
-    <div class="container_answer">
-        <input type="submit" class="answer_input" id="1" onclick="check()" value="False"></input>
-        <input type="submit" class="answer_input" id="2" onclick="check()" value="True"></input>
-
-    </div>
-    <div class="question_number">
-        <h2> QUESTION 3<span>/10</span></h2>
-    </div>
-</div>
-
-<div class="question">
-    <h1 class="domanda"> Pointers were not used in the original C programming language; they were added later on in C++.
-    </h1>
-    </div>
-    <div class="container_answer">
-        <input type="submit" class="answer_input" id="1" onclick="check()" value="False"></input>
-        <input type="submit" class="answer_input" id="2" onclick="check()" value="True"></input>
-    </div>
-    <div class="question_number">
-        <h2> QUESTION 4<span>/10</span></h2>
-    </div>
-</div>
-
-<div class="question">
-    <h1 class="domanda"> What is the most preferred image format used for logos in the Wikimedia database?
-    </h1>
-    </div>
-    <div class="container_answer">
-        <input type="submit" class="answer_input" id="1" onclick="check()" value=".gif"></input>
-        <input type="submit" class="answer_input" id="2" onclick="check()" value=".jpeg"></input>
-        <input type="submit" class="answer_input" id="3" onclick="check()" value=".svg"></input>
-        <input type="submit" class="answer_input" id="4" onclick="check()" value=".png"></input>
-    </div>
-    <div class="question_number">
-        <h2> QUESTION 5<span>/10</span></h2>
-    </div>
-</div>
-
-
-<div class="question">
-    <h1 class="domanda"> In web design, what does CSS stand for?
-    </h1>
-    </div>
-    <div class="container_answer">
-        <input type="submit" class="answer_input" id="1" onclick="check()" value="Cascading Style Sheet"></input>
-        <input type="submit" class="answer_input" id="2" onclick="check()" value="Computer Style Sheet"></input>
-        <input type="submit" class="answer_input" id="3" onclick="check()" value="Counter Strike: Source"></input>
-        <input type="submit" class="answer_input" id="4" onclick="check()" value="Corrective Style Sheet"></input>
-    </div>
-    <div class="question_number">
-        <h2> QUESTION 6<span>/10</span></h2>
-    </div>
-</div>
-
-
-<div class="question">
-    <h1 class="domanda"> What is the code name for the mobile operating system Android 7.0?
-    </h1>
-    </div>
-    <div class="container_answer">
-        <input type="submit" class="answer_input" id="1" onclick="check()" value="Jelly Bean"></input>
-        <input type="submit" class="answer_input" id="2" onclick="check()" value="Nougat"></input>
-        <input type="submit" class="answer_input" id="3" onclick="check()" value="Ice Cream Sandwich"></input>
-        <input type="submit" class="answer_input" id="4" onclick="check()" value="Marshmallow"></input>
-    </div>
-    <div class="question_number">
-        <h2> QUESTION 7<span>/10</span></h2>
-    </div>
-</div>
-
-
-<div class="question">
-    <h1 class="domanda"> On Twitter, what is the character limit for a Tweet?
-    </h1>
-    </div>
-    <div class="container_answer">
-        <input type="submit" class="answer_input" id="1" onclick="check()" value="120"></input>
-        <input type="submit" class="answer_input" id="2" onclick="check()" value="100"></input>
-        <input type="submit" class="answer_input" id="3" onclick="check()" value="140"></input>
-        <input type="submit" class="answer_input" id="4" onclick="check()" value="160"></input>
-    </div>
-    <div class="question_number">
-        <h2> QUESTION 8<span>/10</span></h2>
-    </div>
-</div>
-
-
-<div class="question">
-    <h1 class="domanda"> Linux was first created as an alternative to Windows XP.
-    </h1>
-    </div>
-    <div class="container_answer">
-        <input type="submit" class="answer_input" id="1" onclick="check()" value="False"></input>
-        <input type="submit" class="answer_input" id="2" onclick="check()" value="True"></input>
-    </div>
-    <div class="question_number">
-        <h2> QUESTION 9<span>/10</span></h2>
-    </div>
-</div>
-
-
-<div class="question">
-    <h1 class="domanda"> Which programming language shares its name with an island in Indonesia?
-    </h1>
-    </div>
-    <div class="container_answer">
-        <input type="submit" class="answer_input" id="1" onclick="check()" value="Jakarta"></input>
-        <input type="submit" class="answer_input" id="2" onclick="check()" value="C"></input>
-        <input type="submit" class="answer_input" id="3" onclick="check()" value="Java"></input>
-        <input type="submit" class="answer_input" id="4" onclick="check()" value="Python"></input>
-    </div>
-    <div class="question_number">
-        <h2> QUESTION 10<span>/10</span></h2>
-    </div>
-</div>
-
-
-<div class="core">
-    <!-- ... Tutto il resto del contenuto ... -->
-</div>
-
-<!-- Aggiungi questo blocco HTML alla fine della pagina -->
-<div class="final-score">
-    <h2>Punteggio Finale</h2>
-    <div class="stars">
-        <img src="./img/star.svg" alt="Star" class="star">
-        <img src="./img/star.svg" alt="Star" class="star">
-        <img src="./img/star.svg" alt="Star" class="star">
-        <img src="./img/star.svg" alt="Star" class="star">
-        <img src="./img/star.svg" alt="Star" class="star">
-        <img src="./img/star.svg" alt="Star" class="star">
-        <img src="./img/star.svg" alt="Star" class="star">
-        <img src="./img/star.svg" alt="Star" class="star">
-        <img src="./img/star.svg" alt="Star" class="star">
-        <img src="./img/star.svg" alt="Star" class="star">
-    </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
     <script src="./bw1.js"></script>
 </body>
 
