@@ -126,29 +126,31 @@ body {
 .container_answer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 40%;
   margin-left: 30%;
   margin-right: 50%;
-  height: 40vh;
+  height: 20vh;
 }
 .answer_input {
   color: white;
-  width: 32vh;
-  height: 9vh;
-  border-radius: 35%;
-  background-color: transparent;
-  border-top: solid 2px rgb(255, 255, 255);
-  border-right: solid 1px white;
-  border-left: solid 1px white;
-  border-bottom: solid 0.5px rgba(206, 196, 196, 0.293);
+  font-weight: bold;
+  font-size: small;
+  width: 36vh;
+  height: 7vh;
+  border-radius: 50px;
+  background-color: rgba(41, 41, 83, 0.4);
+  border-top: solid 2px rgba(255, 255, 255, 0.5);
+  border-right: solid 1px rgba(255, 255, 255, 0.5);
+  border-left: solid 1px rgba(255, 255, 255, 0.5);
+  border-bottom: none;
   cursor: pointer;
 }
 .question_number {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 120px;
 }
 
 .question_number h2 {
@@ -202,15 +204,9 @@ body {
 /*fine css timer*/
 
 /*css domande*/
-h1 {
+h1,
+h2 {
   color: white;
-  text-align: center;
-}
-
-#first,
-#second,
-#third,
-#fourth {
   text-align: center;
 }
 
@@ -219,11 +215,6 @@ h1 {
 }
 
 /* css punteggio finale*/
-
-h2 {
-  color: white;
-  text-align: center;
-}
 
 .final-score {
   position: absolute;
