@@ -101,7 +101,7 @@ function updateTimer() {
   const tempoDisplay = document.getElementById("timer");
 
   // Calcolo i secondi rimanenti
-  const seconds = tempoRimanente % 60;
+  const seconds = tempoRimanente % 61;
 
   // Formatto il tempo per la visualizzarlo
   tempoDisplay.textContent = seconds;
