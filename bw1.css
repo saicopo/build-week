@@ -80,7 +80,7 @@ body {
   font-size: 24px;
   font-weight: bold;
   color: #0d1025;
-  margin-right: auto;
+  margin-left: 800px;
 }
 
 .proceed-button {
@@ -94,6 +94,7 @@ body {
   cursor: pointer;
   color: #0d1025;
   margin-right: auto;
+  
 }
 
 .proceed-button:hover {
@@ -203,7 +204,7 @@ body {
 
 /*css domande*/
 h1 {
-  color: #d52828;
+  color:white;
   text-align: center;
 }
 
