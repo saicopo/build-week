@@ -120,10 +120,10 @@ function updateTimer() {
   // Riduco il tempo rimanente
   tempoRimanente--;
 
-  // Se il tempo è scaduto, fermao il timer
+  // Se il tempo è scaduto, ferma il timer
   if (tempoRimanente < 0) {
-    clearInterval(timerIntervallo);
-    // Esegui altre azioni quando il tempo è scaduto, come passare alla prossima domanda
+    // Se l'utente non clicca, allo scade del timer vai alla prossima domanda
+    checkAnswer(null);
   }
 }
 
@@ -137,7 +137,7 @@ let score = 0; // Variabile globale per il punteggio
 let questionNumber = 0; // Variabile per tenere traccia del numero di domanda
 
 document.addEventListener("DOMContentLoaded", function () {
-  //loadQuestion(); // Carica la prima domanda
+  loadQuestion(); // Carica la prima domanda
 
   const answerButtons = document.querySelectorAll(".answer_input");
   answerButtons.forEach((button) => {

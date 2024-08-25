@@ -108,15 +108,12 @@ body {
 }
 
 .header {
-  display: flex;
-  height: 40vh;
-  width: 100%;
+  height: 28vh;
 }
 .logo_q {
-  margin-top: 20vh;
-  margin-left: 20vh;
-  width: 13%;
-  height: 17%;
+  margin-top: 10vh;
+  margin-left: 10vh;
+  height: 50px;
 }
 
 .question {
@@ -210,13 +207,27 @@ h1 {
   text-align: center;
 }
 
+#first,
+#second,
+#third,
+#fourth {
+  text-align: center;
+}
+
 #question_page {
   color: white;
 }
 
-p {
+/* css punteggio finale*/
+
+h2 {
   color: white;
+  text-align: center;
 }
-.final-score h2 {
-  color: white;
+
+.final-score {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
