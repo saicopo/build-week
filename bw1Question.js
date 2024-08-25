@@ -33,7 +33,7 @@ const questions = [
     type: "boolean",
     difficulty: "easy",
     question:
-      "Pointers were not used in the original C programming language; they were added later on in C++.",
+      "Pointers were not used in the original C programming language, they were added later on in C++.",
     correct_answer: "False",
     incorrect_answers: ["True"],
   },
@@ -101,7 +101,7 @@ function updateTimer() {
   const tempoDisplay = document.getElementById("timer");
 
   // Calcolo i secondi rimanenti
-  const seconds = tempoRimanente % 60;
+  const seconds = tempoRimanente % 61;
 
   // Formatto il tempo per la visualizzarlo
   tempoDisplay.textContent = seconds;
@@ -198,7 +198,9 @@ function checkAnswer(selectedAnswer) {
 }
 
 function showScore() {
-  document.querySelector(".core").innerHTML = `
-      <h1>Your Score: ${score}/${questions.length}</h1>
+  document.querySelector(".core").innerHTML = `<div class="header">
+            <img class="logo_q" src="./img/epicode_logo.png" alt="">
+        </div>
+      <h1 class="final-score">Your Score: ${score}/${questions.length}</h1>
     `;
 }
