@@ -80,7 +80,7 @@ body {
   font-size: 24px;
   font-weight: bold;
   color: #0d1025;
-  margin-right: auto;
+  margin-left: 800px;
 }
 
 .proceed-button {
@@ -204,8 +204,7 @@ body {
 /*fine css timer*/
 
 /*css domande*/
-h1,
-h2 {
+h1 {
   color: white;
   text-align: center;
 }
