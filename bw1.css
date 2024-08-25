@@ -48,21 +48,20 @@ body {
 
 .details {
   font-size: 16px;
-  margin-bottom: 20px;
+  margin-bottom: 80px;
   line-height: 1.5;
   color: whitesmoke;
 }
 
 .details ul {
   padding-left: 20px;
-  margin: 0;
+  margin-top: 50px;
   color: whitesmoke;
 }
 
 .checkbox {
   display: flex;
   align-items: center;
-  margin-top: 20px;
   color: whitesmoke;
 }
 
@@ -73,18 +72,16 @@ body {
 }
 
 .default-button {
-  margin-top: 30px;
   background: gray;
   border: none;
   padding: 15px 40px;
   font-size: 24px;
   font-weight: bold;
   color: #0d1025;
-  margin-left: 800px;
+  margin-left: 250px;
 }
 
 .proceed-button {
-  margin-top: 30px;
   background: #00ffff;
   box-shadow: 0 0 10px 2px #00ffff;
   border: none;
@@ -93,7 +90,7 @@ body {
   font-weight: bold;
   cursor: pointer;
   color: #0d1025;
-  margin-right: auto;
+  margin-left: 250px;
 }
 
 .proceed-button:hover {
@@ -204,7 +201,8 @@ body {
 /*fine css timer*/
 
 /*css domande*/
-h1 {
+h1,
+h2 {
   color: white;
   text-align: center;
 }
